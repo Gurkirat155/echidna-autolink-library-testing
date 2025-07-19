@@ -1,9 +1,9 @@
 # Allow fuzzer to use public/external functions from all contracts
 allContracts: true
 testMode : assertion
-testLimit: 50000
+testLimit: 50000000
 
-# prefix: "invariant_"
+prefix: "invariant_"
 # specify address to use for fuzz transations
 # limit this to the allowed voting addresses
 sender: ["0x1000000000000000000000000000000000000000", "0x2000000000000000000000000000000000000000", "0x3000000000000000000000000000000000000000", "0x4000000000000000000000000000000000000000", "0x5000000000000000000000000000000000000000","0x6000000000000000000000000000000000000000"]

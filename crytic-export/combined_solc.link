@@ -1,0 +1,6 @@
+{
+  "deployment_order": [],
+  "library_addresses": {
+    "MockLibrary": "0x000000000000000000000000000000000000a070"
+  }
+}
