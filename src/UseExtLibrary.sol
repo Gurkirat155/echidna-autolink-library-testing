@@ -1,21 +1,23 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.6.6;
+pragma solidity ^0.8.0;
 
 // import "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol";
 // import "@uniswap/v2-periphery/contracts/libraries/UniswapV2Library.sol";
 import "./MockLibrary.sol";
 
 
-contract UseUniLibrary {
-    uint public last = 1;
+contract UseExtLibrary {
+    uint public last = 1 ;
+
+    constructor() public payable {}
 
     function doInc(uint x) public {
         last = MockLibrary.inc(x);
     }
 
-    // function doDec(uint x) public {
-    //     last = MockLibrary.dec(x);
-    // }
+    function doDec(uint x) public {
+        last = MockLibrary.dec(x);
+    }
 
     
     function invariant_last_nonzero() public view  {
