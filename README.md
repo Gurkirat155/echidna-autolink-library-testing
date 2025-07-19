@@ -79,7 +79,7 @@ I tested the same contract using different combinations of:
 ## 4. Summary of Findings
 
 - ✅ **Autolink** works correctly with **internal libraries** — compiles and detects the bug
-- ❌ **Autolink** compiles **external libraries**, but **fails to detect** the bug — possibly a bug in the Autolink system
+- ❌ **Autolink** compiles **external libraries**, but **fails to detect** the bug.
 - ✅ **Foundry** cannot compile **external libraries** — expected limitation
 - ✅ **Foundry** compiles **internal libraries** and **successfully detects bugs**
 
